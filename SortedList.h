@@ -7,6 +7,17 @@ namespace mtm {
 
     template <typename T>
     class SortedList {
+        class Node{
+            T data;
+            Node* next;
+
+            Node(T data;) : data(data), node(nullptr) {};
+        };
+
+        Node* head;
+        int size;
+        
+        void clearList(); //implemented
     public:
         /**
          *
@@ -31,8 +42,55 @@ namespace mtm {
          * 11. filter - returns a new list with elements that satisfy a given condition
          * 12. apply - returns a new list with elements that were modified by an operation
          */
-
+        SortedList(); // implemeneted
+        ~SortedList();  // implemented
+        SortedList(const SortedList& other); // working on
+        SortedList& operator=(const SortedList& other);
+        class ConstIterator;
+        ConstIterator& begin(); // will add return value later
+        ConstIterator& end(); // same for begin
+        void insert(const T& data);
+        void remove(const ConstIterator& it);
+        int length() const; // implemented
     };
+
+    template <class T>
+    SortedList<T>::SortedList() : head(nullptr), size(0){
+    }
+
+    template <class T>
+    void SortedList<T>::clearList() {
+        Node* current = this->head;
+        while (current){
+            Node* toDelete = current;
+            current = current->next;
+            delete toDelete;
+        }
+        this->head = nullptr;
+        this->size = 0;
+    }
+
+    template <class T>
+    SortedList<T>::~SortedList(){ 
+        clearList() 
+    }
+
+    template <class T>
+    SortedList<T>::SortedList(const SortedList& other){ // didnt finish 
+        const SortedList* source = other;
+        SortedList* target = this->head;
+        Node* nextNode = nullptr;
+        while(source){
+            Node node = new Node(source->head->data);
+            target->head = &node;
+            source->head = source->head->next;
+        }
+    }
+
+    template <class T>
+    int SortedList<T>::length() const { 
+        return this->size;
+    }
 
     template <class T>
     class SortedList<T>::ConstIterator {
