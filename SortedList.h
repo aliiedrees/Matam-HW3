@@ -26,6 +26,7 @@ namespace mtm {
          *
          * constructors and destructor:
          * 1. SortedList() - creates an empty list.
+         * 
          * 2. copy constructor
          * 3. operator= - assignment operator
          * 4. ~SortedList() - destructor
@@ -47,8 +48,8 @@ namespace mtm {
         SortedList(const SortedList& other); // working on
         SortedList& operator=(const SortedList& other);
         class ConstIterator;
-        ConstIterator& begin(); // will add return value later
-        ConstIterator& end(); // same for begin
+        ConstIterator& begin() const; // will add return value later
+        ConstIterator& end() const; // same for begin
         void insert(const T& data);
         void remove(const ConstIterator& it);
         int length() const; // implemented
@@ -94,22 +95,47 @@ namespace mtm {
 
     template <class T>
     class SortedList<T>::ConstIterator {
-    /**
-     * the class should support the following public interface:
-     * if needed, use =defualt / =delete
-     *
-     * constructors and destructor:
-     * 1. a ctor(or ctors) your implementation needs
-     * 2. copy constructor
-     * 3. operator= - assignment operator
-     * 4. ~ConstIterator() - destructor
-     *
-     * operators:
-     * 5. operator* - returns the element the iterator points to
-     * 6. operator++ - advances the iterator to the next element
-     * 7. operator!= - returns true if the iterator points to a different element
-     *
-     */
+        int index;
+        const Node* node;
+
+        explicit ConstIterator(const Node& node, const int& index);
+        
+        friend class SortedList<T>;
+
+    public:
+        ConstIterator(const ConstIterator&) = default;
+        ConstIterator& operator=(const ConstIterator& cIt);
+        ~ConstIterator() = default;
+        const T& operator*();
+        ConstIterator& operator++();
+        bool operator!=(const ConstIterator& cIt);
     };
+
+    template <class T>
+    SortedList<T>::ConstIterator::ConstIterator(const Node& node, const int& index)
+    : node(node), index(index){}
+
+    template <class T>
+    typename SortedList<T>::ConstIterator& SortedList<T>::ConstIterator::operator=
+    (const ConstIterator& cIt){
+        this->index = cIt.index;
+        this->node = cIt.node;
+    }
+
+    template <class T> 
+    const T& SortedList<T>::ConstIterator::operator*(){
+        return this->node->data;
+    }
+
+    template <class T>
+    typename SortedList<T>::ConstIterator& SortedList<T>::ConstIterator::operator++(){
+        if(!this->node){
+            throw std::out_of_range;
+        }
+        this->node = this->node->next;
+        (this->index)++;
+        
+        return *this;
+    }
 }
 
