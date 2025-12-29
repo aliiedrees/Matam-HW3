@@ -2,12 +2,13 @@
 #pragma once
 
 #include "Task.h"
-
+#include "Person.h"
 /**
  * @brief Class managing tasks assigned to multiple persons.
  */
 class TaskManager {
 private:
+ Person* persons;
     /**
      * @brief Maximum number of persons the TaskManager can handle.
      */
