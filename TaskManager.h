@@ -8,12 +8,12 @@
  */
 class TaskManager {
 private:
- Person* persons;
     /**
      * @brief Maximum number of persons the TaskManager can handle.
      */
     static const int MAX_PERSONS = 10;
-
+    Person persons[MAX_PERSONS];
+    int id = 0;
     // Note - Additional private fields and methods can be added if needed.
 
 public:
