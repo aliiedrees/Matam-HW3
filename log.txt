@@ -1,0 +1,178 @@
+* commit 9f9a59d1251afdbbd045bef7755eafa1d8b7feb2
+| Author: Ali Edrees <ali.edrees@campus.technion.ac.il>
+| Date:   Thu Jan 1 20:38:12 2026 +0200
+| 
+|     Delete Person.cpp
+| 
+|  Person.cpp | 51 ---------------------------------------------------
+|  1 file changed, 51 deletions(-)
+| 
+* commit fd6b96e001a8b4bb0ad319d0b36e09c3c547d136
+| Author: Ali Edrees <ali.edrees@campus.technion.ac.il>
+| Date:   Thu Jan 1 20:37:53 2026 +0200
+| 
+|     Delete .gitmodules
+| 
+|  .gitmodules | 6 ------
+|  1 file changed, 6 deletions(-)
+| 
+* commit 8d2e1c6defc32190cb5f3db279b6a1688f8343c3
+| Author: Ali Edrees <ali.edrees@campus.technion.ac.il>
+| Date:   Thu Jan 1 20:37:44 2026 +0200
+| 
+|     Delete .gitignore
+| 
+|  .gitignore | 10 ----------
+|  1 file changed, 10 deletions(-)
+| 
+* commit abf5d697f2ceb2af4d00b0363f6a2d7721a3c208
+| Author: Ali Edrees <ali.edrees@campus.technion.ac.il>
+| Date:   Thu Jan 1 20:36:22 2026 +0200
+| 
+|     Delete tests directory
+| 
+|  tests/test1.expected |  3 ---
+|  tests/test2.expected |  3 ---
+|  tests/test3.expected | 30 ------------------------------
+|  tests/test4.expected |  3 ---
+|  tests/test5.expected |  3 ---
+|  tests/test6.expected | 15 ---------------
+|  6 files changed, 57 deletions(-)
+| 
+* commit 3127b066aec6bf48ba6b6d3a5e6da6fbf0dd4711
+| Author: Ali Edrees <ali.edrees@campus.technion.ac.il>
+| Date:   Thu Jan 1 20:36:09 2026 +0200
+| 
+|     Delete Task.h
+| 
+|  Task.h | 115 ---------------------------------------------------------------
+|  1 file changed, 115 deletions(-)
+| 
+* commit 5ea33cd15fb677d8a1988d6aa35a8481151c09c3
+| Author: Ali Edrees <ali.edrees@campus.technion.ac.il>
+| Date:   Thu Jan 1 20:34:52 2026 +0200
+| 
+|     Delete TaskManager.cpp.txt
+| 
+|  TaskManager.cpp.txt | 0
+|  1 file changed, 0 insertions(+), 0 deletions(-)
+| 
+* commit 610512527a25c076f661b9104f60037db660e3ef
+| Author: Ali Edrees <ali.edrees@campus.technion.ac.il>
+| Date:   Thu Jan 1 20:34:33 2026 +0200
+| 
+|     Delete main.cpp
+| 
+|  main.cpp | 531 -------------------------------------------------------------
+|  1 file changed, 531 deletions(-)
+| 
+* commit d89eca8bff867c0c093e7200c11c2283695ec1f4
+| Author: Ali Edrees <ali.edrees@campus.technion.ac.il>
+| Date:   Wed Dec 31 16:24:45 2025 +0200
+| 
+|     finish
+| 
+|  .gitignore         | 10 ++++++-
+|  .gitmodules        |  6 +++++
+|  MatamGenericTester |  1 +
+|  SortedList.h       | 74 +++++++++++++++++++++++++++++-----------------------
+|  TaskManager.cpp    | 54 ++++++++++++++++++++++----------------
+|  TaskManager.h      |  4 +--
+|  TechnionMatam      |  1 +
+|  7 files changed, 92 insertions(+), 58 deletions(-)
+| 
+* commit b2df80859a8da0d027bb829d38f0ac12fb5910b5
+| Author: abdelhadi <kiwanabed02@gmail.com>
+| Date:   Mon Dec 29 14:11:34 2025 +0200
+| 
+|     Task manager class
+| 
+|  TaskManager.cpp     | 92 +++++++++++++++++++++++++++++++++++++++++++++++++++
+|  TaskManager.cpp.txt |  0
+|  TaskManager.h       |  3 +-
+|  3 files changed, 94 insertions(+), 1 deletion(-)
+| 
+* commit 4503c258f86973fc2ad9ddb85080daad3bdbf31f
+| Author: Ali Edrees <ali.edrees@campus.technion.ac.il>
+| Date:   Sun Dec 28 13:52:50 2025 +0200
+| 
+|     finish SortedList.h implementation | still didnt go through test just writing logic
+| 
+|  SortedList.h | 133 ++++++++++++++++++++++++++++++++++++++++++---------------
+|  1 file changed, 99 insertions(+), 34 deletions(-)
+| 
+* commit 4911296f5a00086e7912c579099be0210fc5a7f8
+| Author: Ali Edrees <ali.edrees@campus.technion.ac.il>
+| Date:   Sat Dec 27 21:19:33 2025 +0200
+| 
+|     Initial implementaion of SortedList.h | missing apply and filter method
+| 
+|  SortedList.h | 60 ++++++++++++++++++++++++++++++++++++++++++++++++++++++----
+|  1 file changed, 56 insertions(+), 4 deletions(-)
+| 
+* commit 0a7ad2507aafe0fd31fff6b83b6a0716c7632fde
+| Author: Ali Edrees <ali.edrees@campus.technion.ac.il>
+| Date:   Sat Dec 27 16:40:48 2025 +0200
+| 
+|     fixed checkpoint for Ali
+| 
+|  SortedList.h | 62 +++++++++++++++++++++++++++++++++++++++++-----------------
+|  1 file changed, 44 insertions(+), 18 deletions(-)
+| 
+* commit 7b5c90db5bf0447894f283b61947c9c0e79cab25
+| Author: Ali Edrees <ali.edrees@campus.technion.ac.il>
+| Date:   Sat Dec 27 16:40:23 2025 +0200
+| 
+|     update .gitignore file
+| 
+|  .gitignore | 2 +-
+|  1 file changed, 1 insertion(+), 1 deletion(-)
+| 
+* commit a2192679b150a04167bab66d4012f433b548a299
+| Author: Ali Edrees <ali.edrees@campus.technion.ac.il>
+| Date:   Sat Dec 27 16:39:57 2025 +0200
+| 
+|     update .gitignore file
+| 
+|  .gitignore | 2 ++
+|  1 file changed, 2 insertions(+)
+| 
+* commit 1afa38260cf1d64ec55bdea4f7ed99fc5e127b6d
+| Author: Ali Edrees <ali.edrees@campus.technion.ac.il>
+| Date:   Sat Dec 27 16:38:18 2025 +0200
+| 
+|     checkpoint for Ali's changes to SortedList.h
+| 
+|  SortedList.h | 60 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+|  1 file changed, 59 insertions(+), 1 deletion(-)
+| 
+* commit c96c4bb35ecfe36518dbc7b668ad16b7e19d465b
+| Author: Ali Edrees <ali.edrees@campus.technion.ac.il>
+| Date:   Sat Dec 27 16:37:24 2025 +0200
+| 
+|     add .gitignore file
+| 
+|  .gitignore | 0
+|  1 file changed, 0 insertions(+), 0 deletions(-)
+| 
+* commit c5722ab4f16cac40fa756f333918cd651d0b3fa8
+  Author: EgbariaMohammad <agbariya@campus.technion.ac.il>
+  Date:   Fri Dec 26 15:46:17 2025 +0200
+  
+      Add files via upload
+  
+   Person.cpp           |  51 +++++
+   Person.h             |  79 ++++++++
+   README.md            |   6 +
+   SortedList.h         |  57 ++++++
+   Task.cpp             |  86 ++++++++
+   Task.h               | 115 +++++++++++
+   TaskManager.h        |  75 +++++++
+   main.cpp             | 531 +++++++++++++++++++++++++++++++++++++++++++++++++
+   tests/test1.expected |   3 +
+   tests/test2.expected |   3 +
+   tests/test3.expected |  30 +++
+   tests/test4.expected |   3 +
+   tests/test5.expected |   3 +
+   tests/test6.expected |  15 ++
+   14 files changed, 1057 insertions(+)
